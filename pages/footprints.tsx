@@ -13,7 +13,7 @@ export default function Footprints() {
       </Head>
 
       <AppLayout activePage="footprints">
-        {/* Footprints content goes here */}
+        <div />
       </AppLayout>
     </>
   );
