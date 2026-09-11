@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { triggerHapticFeedback } from '../lib/haptics';
 
 export default function Home() {
+  const router = useRouter();
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [0, 1, 2];
 
@@ -22,8 +24,7 @@ export default function Home() {
 
   const handleStart = () => {
     triggerHapticFeedback('medium');
-    // Navigate to main app
-    window.location.href = '/dashboard';
+    router.push('/login');
   };
 
   return (
