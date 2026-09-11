@@ -22,8 +22,8 @@ export default function Footprints() {
 
       <div className="flex flex-col h-screen bg-gray-900 text-white">
         {/* Title Bar */}
-        <div className="bg-gray-800 border-b border-gray-700 px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold">Footprints</h1>
+        <div className="bg-gray-800 border-b border-gray-700 px-4 py-3 flex items-center justify-between">
+          <h1 className="text-xl font-bold">Footprints</h1>
           <ProfileBadge onLogout={handleLogout} />
         </div>
 
