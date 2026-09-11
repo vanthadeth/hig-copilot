@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --viewport-height: 100vh;
+}
+
+/* iOS viewport height fix */
+@supports (height: 100dvh) {
+  :root {
+    --viewport-height: 100dvh;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Enable haptic feedback */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Haptic feedback utilities */
+@layer utilities {
+  .haptic-light {
+    cursor: pointer;
+  }
+
+  .haptic-medium {
+    cursor: pointer;
+  }
+
+  .haptic-heavy {
+    cursor: pointer;
+  }
+}
+
+/* Prevent zoom on input focus */
+input,
+button,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* Fullscreen mode styles */
+.fullscreen-app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--viewport-height);
+  overflow: hidden;
+}
