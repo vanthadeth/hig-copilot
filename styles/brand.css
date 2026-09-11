@@ -16,8 +16,8 @@
   --color-neutral-border: #e5e5e5;
 
   /* Surface Colors */
-  --color-surface-bg: #ffffff;
-  --color-surface-alt: #f9f9f9;
+  --color-surface-bg: #2a2a2a; /* Dark grey background */
+  --color-surface-alt: #333333;
 
   /* Typography */
   --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -58,10 +58,10 @@
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-surface-bg: #1a1a1a;
-    --color-surface-alt: #242424;
+    --color-surface-bg: #2a2a2a;
+    --color-surface-alt: #333333;
     --color-neutral-dark: #ffffff;
     --color-neutral-light: #1a1a1a;
-    --color-neutral-border: #333333;
+    --color-neutral-border: #444444;
   }
 }
