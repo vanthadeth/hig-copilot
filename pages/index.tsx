@@ -33,13 +33,18 @@ export default function Home() {
         <title>Footprints - HIG</title>
         <meta name="description" content="Journal your sales journey with Footprints" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <link rel="icon" href="/logos/hig_logo_dark.svg" />
+        <link rel="apple-touch-icon" href="/logos/hig_logo_dark.svg" />
       </Head>
 
       <div className="flex flex-col h-screen bg-gray-900 text-white">
-        {/* Header */}
-        <div className="px-6 pt-8 pb-6">
-          <h2 className="text-sm font-semibold text-gray-400">Footprints — by HIG</h2>
-          <h1 className="text-3xl font-bold mt-4">Journal your sales journey</h1>
+        {/* Header with Logo */}
+        <div className="px-6 pt-8 pb-6 flex items-center gap-3">
+          <img src="/logos/hig_logo_dark.svg" alt="HIG Logo" className="w-10 h-10" />
+          <div>
+            <h2 className="text-sm font-semibold text-gray-400">Footprints — by HIG</h2>
+            <h1 className="text-3xl font-bold mt-1">Journal your sales journey</h1>
+          </div>
         </div>
 
         {/* Main Content - Slides */}
