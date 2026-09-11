@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import TitleBar from '../components/TitleBar';
-import BottomNavBar from '../components/BottomNavBar';
+import AppLayout from '../components/AppLayout';
 
 export default function Footprints() {
   return (
@@ -13,15 +12,9 @@ export default function Footprints() {
         <link rel="apple-touch-icon" href="/logos/hig_logo_dark.svg" />
       </Head>
 
-      <div className="flex flex-col h-screen bg-gray-900 text-white">
-        <TitleBar />
-
-        {/* Content Area */}
-        <div className="flex-1 overflow-y-auto px-6 py-8">
-        </div>
-
-        <BottomNavBar activePage="footprints" />
-      </div>
+      <AppLayout activePage="footprints">
+        {/* Footprints content goes here */}
+      </AppLayout>
     </>
   );
 }
