@@ -17,11 +17,7 @@ export default function Footprints() {
         <TitleBar />
 
         {/* Content Area */}
-        <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-300 mb-2">My Footprints</h2>
-            <p className="text-gray-500">Your footprints content goes here</p>
-          </div>
+        <div className="flex-1 overflow-y-auto px-6 py-8">
         </div>
 
         <BottomNavBar activePage="footprints" />
