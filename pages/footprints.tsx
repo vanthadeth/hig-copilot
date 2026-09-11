@@ -1,15 +1,8 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import TitleBar from '../components/TitleBar';
 import BottomNavBar from '../components/BottomNavBar';
-import ProfileBadge from '../components/ProfileBadge';
 
 export default function Footprints() {
-  const router = useRouter();
-
-  const handleLogout = () => {
-    router.push('/login');
-  };
-
   return (
     <>
       <Head>
@@ -21,11 +14,7 @@ export default function Footprints() {
       </Head>
 
       <div className="flex flex-col h-screen bg-gray-900 text-white">
-        {/* Title Bar */}
-        <div className="bg-gray-800 border-b border-gray-700 px-4 py-3 flex items-center justify-between">
-          <h1 className="text-xl font-bold">Footprints</h1>
-          <ProfileBadge onLogout={handleLogout} />
-        </div>
+        <TitleBar />
 
         {/* Content Area */}
         <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col items-center justify-center">
@@ -35,7 +24,6 @@ export default function Footprints() {
           </div>
         </div>
 
-        {/* Bottom Navigation Bar */}
         <BottomNavBar activePage="footprints" />
       </div>
     </>
