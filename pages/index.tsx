@@ -39,12 +39,10 @@ export default function Home() {
 
       <div className="flex flex-col h-screen bg-gray-900 text-white">
         {/* Header with Logo */}
-        <div className="px-6 pt-8 pb-6 flex items-center gap-3">
-          <img src="/logos/hig_logo_dark.svg" alt="HIG Logo" className="w-10 h-10" />
-          <div>
-            <h2 className="text-sm font-semibold text-gray-400">Footprints — by HIG</h2>
-            <h1 className="text-3xl font-bold mt-1">Journal your sales journey</h1>
-          </div>
+        <div className="px-6 pt-12 pb-4 flex flex-col items-center text-center">
+          <img src="/logos/hig_logo_dark.svg" alt="HIG Logo" className="w-20 h-20 mb-4" />
+          <h1 className="text-4xl font-bold">Footprints</h1>
+          <p className="text-lg text-gray-400 mt-3">Journal your sales journey</p>
         </div>
 
         {/* Main Content - Slides */}
